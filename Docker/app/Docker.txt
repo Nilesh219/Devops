@@ -1,0 +1,14 @@
+Run in terimnal
+npm init -y
+npm install express
+
+
+after this 
+Run the Dockerfile: docker build -t container_name Dockerfile_path
+port mapping: docker run -it -p 400:400 container_name
+or port mapping ENV: docker run -it  PROT=4000 -p 4000:4000 container_name
+run file: docker run -it container_name
+
+publish in hu.docker
+create with docker_repo_name: docker build -t docker_repo_name Dockerfile_path
+Login before: docker push docker_repo_name

@@ -1,0 +1,10 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore package-lock.json and package.json (if you don't want to track these files)
+package.json
+package-lock.json
+
+# Optionally, ignore any other unwanted files
+*.log
+*.env
