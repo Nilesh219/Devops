@@ -1,0 +1,29 @@
+Create Docker busybox 
+
+docker run -it --name container_name busybox
+ping google.com    it will ping
+
+container network having
+bridge = it connected default network of container
+host   = it connected to network you're machine it is host
+none   = it does not connected to internet
+customize network = it Communicate btween two container
+
+command to create customize network
+docker network create network_name
+
+docker run -it --network=network_name --name container_name1 ubuntu
+
+docker run -it --network=network_name --name container_name2 busybox
+
+    ping container_name1
+
+docker network inspect network_name
+
+
+Volume Mounting
+it create copy of files in you're machine and container
+if delete the container all memory gone so we use volume Mounting it save the file in local machine
+
+docker run -it -v local_machine_path:container_path ubuntu
+
